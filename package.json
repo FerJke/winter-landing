@@ -1,0 +1,25 @@
+{
+  "name": "winterlanding",
+  "version": "1.0.0",
+  "description": "winter landing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FerJke/winter-landing.git"
+  },
+  "author": "Ferj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FerJke/winter-landing/issues"
+  },
+  "homepage": "https://github.com/FerJke/winter-landing#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0"
+  }
+}

@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  color: $color-main;
+  font-family: $ff-main;
+  font-weight: normal;
+  background-color: #f8f8f8;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: toRem(1120);
+  padding-left: toRem(15);
+  padding-right: toRem(15);
+}
+
+.clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.is-hidden {
+  display: none;
+}

@@ -1,0 +1,36 @@
+.btn {
+  display: inline-block;
+  padding: toRem(14) toRem(28);
+  font-family: $ff-main;
+  font-size: toRem(14);
+  font-weight: $fs-bold;
+  text-transform: uppercase;
+  line-height: 1;
+  text-decoration: none;
+  background-color: $color-hover;
+  border: 1px solid $color-hover;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: darken($color-hover, 10%);
+  }
+
+  &--main {
+    color: #fff;
+    border-radius: toRem(24);
+  }
+
+  &--big {
+    padding: toRem(19) toRem(38);
+    color: #fff;
+    font-size: toRem(18);
+    border-radius: toRem(28);
+  }
+
+  &--transparent {
+    color: $color-hover;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+}
