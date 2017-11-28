@@ -1,0 +1,53 @@
+.about {
+  padding: toRem(150) 0 toRem(130);
+}
+
+.about__cont {
+  max-width: toRem(1040);
+}
+
+.about__info {
+  background-color: #fff;
+}
+
+.about__info-img {
+  width: 52%;
+  float: left;
+}
+
+.about__info-txtBl {
+  width: 48%;
+  float: right;
+  padding: toRem(25);
+}
+
+.about__info-title {
+  margin: 0;
+  margin-bottom: toRem(30);
+  color: $color-hover;
+  font-size: toRem(36);
+  font-weight: $fs-medium;
+  line-height: 1;
+}
+
+.about__info-txt {
+  margin: 0;
+  color: #111;
+  font-size: toRem(16);
+  font-weight: $fs-light;
+  line-height: 1.5;
+}
+
+.about__list {
+  margin-top: toRem(30);
+  padding-left: 0;
+  list-style-type: none;
+  font-size: 0;
+}
+
+.about__item {
+  display: inline-block;
+  margin-right: toRem(30);
+  font-size: toRem(16);
+  vertical-align: bottom;
+}
