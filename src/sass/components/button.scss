@@ -31,6 +31,13 @@
     color: $color-hover;
     background-color: transparent;
     border-color: transparent;
+    border-radius: toRem(24);
+
+    &:hover {
+      background-color: transparent;
+      border-color: $color-hover;
+    }
+
   }
 
 }
