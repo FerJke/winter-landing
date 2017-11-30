@@ -37,17 +37,3 @@
   font-weight: $fs-light;
   line-height: 1.5;
 }
-
-.about__list {
-  margin-top: toRem(30);
-  padding-left: 0;
-  list-style-type: none;
-  font-size: 0;
-}
-
-.about__item {
-  display: inline-block;
-  margin-right: toRem(30);
-  font-size: toRem(16);
-  vertical-align: bottom;
-}

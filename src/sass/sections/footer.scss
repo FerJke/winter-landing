@@ -1,0 +1,18 @@
+.footer {
+  padding: toRem(44) 0;
+  background-color: #fff;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  width: toRem(46);
+  height: toRem(46);
+}
+
+.footer__bottom {
+  padding-top: toRem(50);
+}
