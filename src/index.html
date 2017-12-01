@@ -16,11 +16,11 @@
         <img src="img/snowflake.svg" alt="logo">
       </div>
       <div class="header__cont clearfix">
-        <a class="header-event btn btn--main" href="">START A PROJECT</a>
+        <a class="header-event btn btn--main js-scrollToStart" href="">START A PROJECT</a>
         <nav class="navigation clearfix">
-          <a href="#" class="navigation__link">about</a>
-          <a href="#" class="navigation__link">portfolio</a>
-          <a href="#" class="navigation__link">contacts</a>
+          <a href="#about" class="navigation__link">about</a>
+          <a href="#portfolio" class="navigation__link">portfolio</a>
+          <a href="#contacts" class="navigation__link">contacts</a>
         </nav>
       </div>
     </div>
@@ -31,11 +31,11 @@
       <h1 class="banner__title">Valerie Kaliuta</h1>
       <h2 class="banner__descr">UX/UI Designer</h2>
       <p class="banner__txt">I always try to use my creativity and imagination to provide clean and modern user interfaces. I prefer to do the main emphasis on ease and simplicity. Available for freelance work.</p>
-      <a class="btn btn--big" href="">START A PROJECT</a>
+      <a class="btn btn--big js-scrollToStart" href="">START A PROJECT</a>
     </div>
   </section><!-- end banner -->
 
-  <div class="about">
+  <div class="about" id="about">
     <div class="container">
       <div class="about__cont">
         <div class="about__info clearfix">
@@ -48,7 +48,7 @@
           </div>
         </div>
 
-        <ul class="social__list">
+        <ul class="social__list" id="contacts">
           <li class="social__item">
             <a href="#" class="social__link" target="_blank"><img src="img/social/facebook.png" alt=""></a>
           </li>
@@ -76,7 +76,7 @@
     </div>
   </div><!-- end about -->
 
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="portfolio__container">
       <h3 class="portfolio__title">Portfolio</h3>
       <ul class="portfolio__list">
@@ -226,7 +226,7 @@
           <a href="#" class="btn btn--transparent">feedback</a>
         </nav>
         <div class="footer__btn">
-          <a href="#" class="btn btn--main">start a project</a>
+          <a href="#" class="btn btn--main js-scrollToStart">start a project</a>
         </div>
       </div>
       <div class="footer__bottom">
@@ -256,6 +256,31 @@
       </div>
     </div>
   </footer>
+
+  <!-- Popup -->
+  <div class="popup">
+    <button class="popup__close">X</button>
+    <div class="popup__content">
+      <form action="" method="post" name="getstart">
+        <p class="form__title">Write a message</p>
+        <div class="form__part">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Name">
+        </div>
+        <div class="form__part">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="E-mail">
+        </div>
+        <div class="form__part">
+          <label for="msg">Message</label>
+          <textarea name="message" id="msg" rows="5" placeholder="Message"></textarea>
+        </div>
+        <div class="form__part form__part--btn">
+          <button class="btn btn--main">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script src="js/custom.js"></script>

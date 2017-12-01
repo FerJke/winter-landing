@@ -47,12 +47,19 @@ gulp.task('copy:img', function(){
     .pipe(gulp.dest('build/img'));
 });
 
+/* ------------- Copy js -------------- */
+gulp.task('copy:js', function(){
+  return gulp.src('src/js/custom.js')
+    .pipe(gulp.dest('build/js'));
+});
+
 /* -------------- Copy ---------------- */
-gulp.task('copy', gulp.parallel('copy:fonts', 'copy:img', 'copy:html'));
+gulp.task('copy', gulp.parallel('copy:fonts', 'copy:img', 'copy:html', 'copy:js'));
 
 /* ---------------- Watchers ----------------- */
 gulp.task('watch', function(){
   gulp.watch('src/index.html', gulp.series('copy:html'));
+  gulp.watch('src/js/custom.js', gulp.series('copy:js'));
   gulp.watch('src/sass/**/*.scss', gulp.series('sass'));
 });
 
